@@ -2,3 +2,7 @@
 	path = examples/Common/STM32CubeF1
 	url = https://github.com/STMicroelectronics/STM32CubeF1.git
 	branch = master
+[submodule "examples/Common/etl"]
+	path = examples/Common/etl
+	url = https://github.com/ETLCPP/etl.git
+	branch = master
