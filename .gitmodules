@@ -6,3 +6,7 @@
 	path = examples/Common/etl
 	url = https://github.com/ETLCPP/etl.git
 	branch = master
+[submodule "examples/Common/CANopenNode.STM32"]
+	path = examples/Common/CANopenNode.STM32
+	url = https://github.com/CANopenNode/CanOpenSTM32.git
+	branch = master
