@@ -10,3 +10,7 @@
 	path = examples/Common/CANopenNode.STM32
 	url = https://github.com/CANopenNode/CanOpenSTM32.git
 	branch = master
+[submodule "examples/Common/Unity"]
+	path = examples/Common/Unity
+	url = https://github.com/ThrowTheSwitch/Unity.git
+	branch = master
