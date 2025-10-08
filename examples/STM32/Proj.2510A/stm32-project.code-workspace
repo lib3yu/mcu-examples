@@ -1,0 +1,67 @@
+{
+    "folders": [
+		{
+			"path": ".",
+			"name": "stm32-project",
+		}
+	],
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-vscode.cpptools-extension-pack",
+			"ms-vscode.makefile-tools",
+			"christian-kohler.path-intellisense",
+			"esbenp.prettier-vscode",
+			"mhutchie.git-graph",
+			"jeff-hykin.better-cpp-syntax",
+			"ms-vscode-remote.remote-wsl",
+			"ms-vscode-remote.vscode-remote-extensionpack",
+			"ms-vscode-remote.remote-ssh",
+		]
+	},
+	"settings": {
+		"editor.tabSize": 4,
+		"editor.insertSpaces": true,
+		
+		// "C_Cpp.default.compilerPath": "C:\\Keil_v5\\ARM\\ARMCLANG_621\\bin\\armclang.exe",
+		// "C_Cpp.default.compilerPath": "D:\\env\\arm-none-eabi-gcc\\13.2-Rel1\\bin\\arm-none-eabi-gcc.exe",
+		"C_Cpp.default.compilerPath": "arm-none-eabi-gcc.exe",
+
+		"C_Cpp.default.cStandard": "c11",
+		"C_Cpp.default.cppStandard": "c++17",
+		"C_Cpp.default.intelliSenseMode": "windows-gcc-arm",
+		"C_Cpp.default.includePath": [
+			"${workspaceFolder}/Core/Inc",
+			"${workspaceFolder}/Drivers/CMSIS/Device/ST/STM32F1xx/Include",
+			"${workspaceFolder}/Drivers/CMSIS/Include",
+			"${workspaceFolder}/Drivers/STM32F1xx_HAL_Driver/Inc",
+			"${workspaceFolder}/Drivers/STM32F1xx_HAL_Driver/Legacy/Inc",
+			"${workspaceFolder}/UserApp/myconet/include",
+			"${workspaceFolder}/UserApp/externals/etl/include",
+			"${workspaceFolder}/UserApp/externals/etl/include/etl"
+			// "C:\\Keil_v5\\ARM\\ARMCLANG_621\\include",
+			// "C:\\Keil_v5\\ARM\\ARMCLANG_621\\include\\libcxx",
+			// "C:\\Keil_v5\\ARM\\ARMCLANG_621\\lib\\clang\\18\\include",
+		],
+		"C_Cpp.default.defines": [
+			"_GNU_SOURCE",
+			"_GLIBCXX_HAS_GTHREADS",
+			"__GTHREAD_COND_INIT",
+			// "__ARMCOMPILER_VERSION=6210000",
+			// "__EXCEPTIONS=1",
+			// "__arm__",
+			"USE_HAL_DRIVER",
+			"STM32F103xE",
+
+		],
+		"C_Cpp.default.browse.path": [
+			"${workspaceFolder}/Core/Src",
+			"${workspaceFolder}/Drivers/STM32F1xx_HAL_Driver/Src",
+			"${workspaceFolder}/UserApp/myconet",
+			"${workspaceFolder}/UserApp",
+		],
+		
+		"C_Cpp.autoAddFileAssociations": false,
+		"C_Cpp.intelliSenseCachePath": "${workspaceFolder}/.cache/"
+	},
+}
