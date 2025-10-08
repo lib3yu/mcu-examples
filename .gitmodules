@@ -14,3 +14,7 @@
 	path = examples/Common/Unity
 	url = https://github.com/ThrowTheSwitch/Unity.git
 	branch = master
+[submodule "examples/Common/CmBacktrace"]
+	path = examples/Common/CmBacktrace
+	url = https://github.com/armink/CmBacktrace.git
+	branch = master
