@@ -22,3 +22,11 @@
 	path = examples/Common/EasyLogger
 	url = https://github.com/armink/EasyLogger.git
 	branch = master
+[submodule "examples/Common/SFUD"]
+	path = examples/Common/SFUD
+	url = https://github.com/armink/SFUD.git
+	branch = master
+[submodule "examples/Common/FlashDB"]
+	path = examples/Common/FlashDB
+	url = https://github.com/armink/FlashDB.git
+	branch = master
