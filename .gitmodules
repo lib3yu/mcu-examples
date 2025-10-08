@@ -1,0 +1,4 @@
+[submodule "examples/Common/STM32CubeF1"]
+	path = examples/Common/STM32CubeF1
+	url = https://github.com/STMicroelectronics/STM32CubeF1.git
+	branch = master
