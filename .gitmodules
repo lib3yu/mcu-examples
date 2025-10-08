@@ -18,3 +18,7 @@
 	path = examples/Common/CmBacktrace
 	url = https://github.com/armink/CmBacktrace.git
 	branch = master
+[submodule "examples/Common/EasyLogger"]
+	path = examples/Common/EasyLogger
+	url = https://github.com/armink/EasyLogger.git
+	branch = master
