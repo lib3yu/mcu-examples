@@ -30,3 +30,7 @@
 	path = examples/Common/FlashDB
 	url = https://github.com/armink/FlashDB.git
 	branch = master
+[submodule "examples/Common/FreeRTOS-Kernel"]
+	path = examples/Common/FreeRTOS-Kernel
+	url = https://github.com/FreeRTOS/FreeRTOS-Kernel.git
+	branch = main
