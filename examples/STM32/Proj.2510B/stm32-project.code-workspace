@@ -2,11 +2,15 @@
     "folders": [
 		{
 			"path": ".",
-			"name": "Project",
+			"name": "Proj.2510B",
 		},
         {
+            "path": "../../Adapt",
+            "name": "Adaptation",
+        },
+        {
             "path": "../../Common",
-            "name": "External"
+            "name": "Dependencies"
         },
 	],
 	"extensions": {
@@ -18,65 +22,80 @@
 			"esbenp.prettier-vscode",
 			"mhutchie.git-graph",
 			"jeff-hykin.better-cpp-syntax",
-			"ms-vscode-remote.remote-wsl",
-			"ms-vscode-remote.vscode-remote-extensionpack",
-			"ms-vscode-remote.remote-ssh",
 		]
 	},
 	"settings": {
 		"editor.tabSize": 4,
 		"editor.insertSpaces": true,
+
+        "git.ignoreSubmodules": true,
+        "git.detectSubmodules": false,
+        "git.detectSubmodulesLimit": 0,
+        "git.openRepositoryInParentFolders": "always",
+
+        "files.associations":{"*.inc": "c"},
+        "files.exclude": {
+            "**/.vscode": true,
+            "**/.cache": true,
+            "**/.git": true,
+            "**/build": true,
+            "**/*.o": true,
+            "Drivers": true,
+        },
+        "files.watcherExclude":{
+            "**/*.o": true,
+            "**/*.d": true,
+        },
+
+        "search.exclude": {
+            "**/bower_components": true,
+            "**/*.code-search": true,
+            "Drivers": true,
+        },
+        "search.useIgnoreFiles": true,
 		
+        "C_Cpp.intelliSenseCachePath": ".cache",
+        "C_Cpp.autoAddFileAssociations": false,
+
 		// "C_Cpp.default.compilerPath": "C:\\Keil_v5\\ARM\\ARMCLANG_621\\bin\\armclang.exe",
 		// "C_Cpp.default.compilerPath": "D:\\env\\arm-none-eabi-gcc\\13.2-Rel1\\bin\\arm-none-eabi-gcc.exe",
 		"C_Cpp.default.compilerPath": "arm-none-eabi-gcc.exe",
-
 		"C_Cpp.default.cStandard": "c11",
-		"C_Cpp.default.cppStandard": "c++17",
+		"C_Cpp.default.cppStandard": "c++11",
 		"C_Cpp.default.intelliSenseMode": "windows-gcc-arm",
+        "C_Cpp.default.forcedInclude":[
+            "Core/Inc/stm32f1xx_hal_conf.h",
+        ],
 		"C_Cpp.default.includePath": [
-			"${workspaceFolder}/Core/Inc",
-			"${workspaceFolder}/../../Common/STM32CubeF1/Drivers/CMSIS/Device/ST/STM32F1xx/Include",
-			"${workspaceFolder}/../../Common/STM32CubeF1/Drivers/CMSIS/Include",
-			"${workspaceFolder}/../../Common/STM32CubeF1/Drivers/STM32F1xx_HAL_Driver/Inc",
-			"${workspaceFolder}/../../Common/STM32CubeF1/Drivers/STM32F1xx_HAL_Driver/Legacy/Inc",
-            "${workspaceFolder}/../../Common/etl/include",
-			"${workspaceFolder}/STM32CubeF1/Drivers/STM32F1xx_HAL_Driver/Inc"
-			// "${workspaceFolder}/STM32CubeF1/Drivers/CMSIS/Device/ST/STM32F1xx/Include",
-			// "${workspaceFolder}/STM32CubeF1/Drivers/CMSIS/Include",
-			// "${workspaceFolder}/STM32CubeF1/Drivers/STM32F1xx_HAL_Driver/Legacy/Inc",
-            // "${workspaceFolder}/etl/include",
-
+			"Core/Inc",
+			"../../Common/STM32CubeF1/Drivers/CMSIS/Device/ST/STM32F1xx/Include",
+			"../../Common/STM32CubeF1/Drivers/CMSIS/Include",
+			"../../Common/STM32CubeF1/Drivers/STM32F1xx_HAL_Driver/Inc",
+			"../../Common/STM32CubeF1/Drivers/STM32F1xx_HAL_Driver/Legacy/Inc",
+            "../../Common/etl/include",
+            "../../Common/Unity/src",
+            "../../Adapt/Unity",
 			// "C:\\Keil_v5\\ARM\\ARMCLANG_621\\include",
 			// "C:\\Keil_v5\\ARM\\ARMCLANG_621\\include\\libcxx",
 			// "C:\\Keil_v5\\ARM\\ARMCLANG_621\\lib\\clang\\18\\include",
 		],
 		"C_Cpp.default.defines": [
 			"_GNU_SOURCE",
-			"_GLIBCXX_HAS_GTHREADS",
-			"__GTHREAD_COND_INIT",
 			// "__ARMCOMPILER_VERSION=6210000",
-			// "__EXCEPTIONS=1",
-			// "__arm__",
 			"USE_HAL_DRIVER",
 			"STM32F103xE",
+            "UNITY_INCLUDE_CONFIG_H",
 
 		],
 		"C_Cpp.default.browse.path": [
-			"${workspaceFolder}/Core/Src",
-			"${workspaceFolder}/UserApp",
-            "${workspaceFolder}/../../Common/STM32CubeF1/Drivers/CMSIS/Device/ST/STM32F1xx/Source",
-			"${workspaceFolder}/../../Common/STM32CubeF1/Drivers/CMSIS",
-			"${workspaceFolder}/../../Common/STM32CubeF1/Drivers/STM32F1xx_HAL_Driver/Src",
-			"${workspaceFolder}/../../Common/STM32CubeF1/Drivers/STM32F1xx_HAL_Driver/Src/Legacy",
-
-            "${workspaceFolder}/STM32CubeF1/Drivers/CMSIS/Device/ST/STM32F1xx/Source",
-			"${workspaceFolder}/STM32CubeF1/Drivers/CMSIS",
-			"${workspaceFolder}/STM32CubeF1/Drivers/STM32F1xx_HAL_Driver/Src",
-			"${workspaceFolder}/STM32CubeF1/Drivers/STM32F1xx_HAL_Driver/Src/Legacy",
+            "../../Common/STM32CubeF1/Drivers/CMSIS/Device/ST/STM32F1xx/Source",
+			"../../Common/STM32CubeF1/Drivers/CMSIS",
+			"../../Common/STM32CubeF1/Drivers/STM32F1xx_HAL_Driver/Src",
+			"../../Common/STM32CubeF1/Drivers/STM32F1xx_HAL_Driver/Src/Legacy",
+            "../../Common/Unity/src",
+            "Core/Src",
+			"UserApp",
 		],
 		
-		"C_Cpp.autoAddFileAssociations": false,
-		"C_Cpp.intelliSenseCachePath": "${workspaceFolder}/.cache/"
 	},
 }
