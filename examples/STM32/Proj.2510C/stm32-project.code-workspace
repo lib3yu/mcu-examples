@@ -1,0 +1,119 @@
+{
+    "folders": [
+		{
+			"path": ".",
+			"name": "Proj.2510C",
+		},
+        {
+            "path": "../../Adapt",
+            "name": "Adaptation",
+        },
+        {
+            "path": "../../Common",
+            "name": "Dependencies"
+        },
+	],
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-vscode.cpptools-extension-pack",
+			"ms-vscode.makefile-tools",
+			"christian-kohler.path-intellisense",
+			"esbenp.prettier-vscode",
+			"mhutchie.git-graph",
+			"jeff-hykin.better-cpp-syntax",
+		]
+	},
+	"settings": {
+		"editor.tabSize": 4,
+		"editor.insertSpaces": true,
+        // "editor.defaultFormatter": "esbenp.prettier-vscode",
+        // "editor.formatOnSave": true,
+
+        "git.ignoreSubmodules": true,
+        "git.detectSubmodules": false,
+        "git.detectSubmodulesLimit": 0,
+        "git.openRepositoryInParentFolders": "always",
+
+        "files.associations":{"*.inc": "c"},
+        "files.exclude": {
+            "**/.vscode": true,
+            "**/.cache": true,
+            "**/.git": true,
+            "**/build": true,
+            "**/*.o": true,
+            "**/*demo*": true,
+            "**/*legacy*": true,
+            "Drivers": true,
+            "Middlewares": true,
+        },
+        "files.watcherExclude":{
+            "**/*.o": true,
+            "**/*.d": true,
+        },
+
+        "search.exclude": {
+            "**/bower_components": true,
+            "**/*.code-search": true,
+            "Drivers": true,
+            "Middlewares": true,
+        },
+        "search.useIgnoreFiles": true,
+		
+        "C_Cpp.intelliSenseCachePath": "${workspaceFolder}/.cache",
+        "C_Cpp.autoAddFileAssociations": false,
+
+		// "C_Cpp.default.compilerPath": "C:\\Keil_v5\\ARM\\ARMCLANG_621\\bin\\armclang.exe",
+		// "C_Cpp.default.compilerPath": "D:\\env\\arm-none-eabi-gcc\\13.2-Rel1\\bin\\arm-none-eabi-gcc.exe",
+		"C_Cpp.default.compilerPath": "arm-none-eabi-gcc.exe",
+		"C_Cpp.default.cStandard": "c11",
+		"C_Cpp.default.cppStandard": "c++11",
+		"C_Cpp.default.intelliSenseMode": "windows-gcc-arm",
+        "C_Cpp.default.forcedInclude":[
+            // "stdint.h",
+            "Core/Inc/FreeRTOSConfig.h",
+        ],
+		"C_Cpp.default.includePath": [
+            // "${workspaceFolder}/**",
+			"../../Common/STM32CubeF1/Drivers/CMSIS/Include",
+			"../../Common/STM32CubeF1/Drivers/CMSIS/Device/ST/STM32F1xx/Include",
+			"../../Common/STM32CubeF1/Drivers/STM32F1xx_HAL_Driver/Inc",
+			"../../Common/STM32CubeF1/Drivers/STM32F1xx_HAL_Driver/Legacy/Inc",
+            "../../Common/STM32CubeF1/Middlewares/Third_Party/FreeRTOS/Source/include",
+            "../../Common/STM32CubeF1/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang",
+            "../../Common/STM32CubeF1/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3",
+            "../../Common/STM32CubeF1/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2",
+            "../../Common/etl/include",
+            "../../Common/SFUD/sfud/inc",
+            "../../Common/Unity/src",
+            "../../Adapt/Unity",
+            "${workspaceFolder}/Core/Inc",
+			// "C:\\Keil_v5\\ARM\\ARMCLANG_621\\include",
+			// "C:\\Keil_v5\\ARM\\ARMCLANG_621\\include\\libcxx",
+			// "C:\\Keil_v5\\ARM\\ARMCLANG_621\\lib\\clang\\18\\include",
+		],
+		"C_Cpp.default.defines": [
+			"_GNU_SOURCE",
+			// "__ARMCOMPILER_VERSION=6210000",
+			// "__ARMCC_VERSION=6210000",
+			"USE_HAL_DRIVER",
+			"STM32F103xE",
+		],
+		"C_Cpp.default.browse.path": [
+            "../../Common/STM32CubeF1/Drivers/CMSIS",
+            "../../Common/STM32CubeF1/Drivers/CMSIS/Device/ST/STM32F1xx/Source",
+			"../../Common/STM32CubeF1/Drivers/STM32F1xx_HAL_Driver/Src",
+			"../../Common/STM32CubeF1/Drivers/STM32F1xx_HAL_Driver/Src/Legacy",
+            "../../Common/STM32CubeF1/Middlewares/Third_Party/FreeRTOS/Source",
+            "../../Common/STM32CubeF1/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2",
+            "../../Common/STM32CubeF1/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang",
+            "../../Common/STM32CubeF1/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3",
+            "../../Common/SFUD/sfud/port",
+            "../../Common/SFUD/sfud/src",
+            "../../Common/Unity/src",
+            "Core/Src",
+			"UserApp",
+		],
+		
+	},
+}

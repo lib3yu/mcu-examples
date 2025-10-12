@@ -1,0 +1,17 @@
+.vscode/
+.cache/
+
+.mxproject
+
+Drivers
+Middlewares
+
+MDK-ARM/DebugConfig/
+MDK-ARM/RTE/
+MDK-ARM/stm32-project/
+MDK-ARM/stm32-project.uvguix.*
+MDK-ARM/stm32-project.uvoptx
+MDK-ARM/*.i
+MDK-ARM/*.lst
+MDK-ARM/*.scvd
+
